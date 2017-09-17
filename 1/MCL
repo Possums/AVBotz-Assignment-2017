@@ -3,7 +3,7 @@ It generates random guesses of where it will be next, which are known as particl
 The particles include information from the environment of a possible future location. 
 The robot gathers information from its surroundings, then proceeds to eliminate the random guesses if they are inconsistent with the gathered data. 
 It proceeds to generate additional particles until the particles are consistent with its observations. 
-The state of the robot can include location coordinates, as well as angles and other relavent measurements. 
+The state of the robot can include location coordinates, as well as angles and other relevant measurements. 
 The robot updates its information in two cycles, the motion update and the sensor update. 
 During the motion update, all guesses are moved in the same way the robot moves, for example forward. 
 In the sensor update, the robot eliminates guesses that are inconsistent with its newly gathered information. 
