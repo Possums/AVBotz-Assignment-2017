@@ -1,5 +1,8 @@
 Monte Carlo localization is an algorithm that allows a robot to estimate its position and direction.
-It generates random guesses of where it will be next, which are known as particles. 
+This method is only effective if the environment is static and does not change in any way.
+It generates random guesses of where it will be next, which are known as particles.
+As the robot does not know anything about its surroundings at first, the guesses are randomly distributed.
+The more particles are generated, the more accurate the algorithm is, though at a higher time cost.
 The particles include information from the environment of a possible future location. 
 The robot gathers information from its surroundings, then proceeds to eliminate the random guesses if they are inconsistent with the gathered data. 
 It proceeds to generate additional particles until the particles are consistent with its observations. 
